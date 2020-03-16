@@ -6,7 +6,7 @@ The main interest was developing a aerodynamic drag based physics model to allow
 
 Quick preview of the project: https://youtu.be/UPsMTKfKHko
 
-Most of the code is quite trivial, but some details will be described here.
+Most of the code is quite trivial, but some details will be described here in the wiki.
 
 
  
