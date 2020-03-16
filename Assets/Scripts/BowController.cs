@@ -82,7 +82,8 @@ public class BowController : MonoBehaviour
 
     void FireProjectile()
     {
-        float energy = 0.5f * drawDistance * maxDrawForce;
+        float fractionOfMax = drawDistance / actualMaxDraw;
+        float energy = 0.5f * drawDistance * maxDrawForce * fractionOfMax;
         float mass = projectileController.RB.mass;
         float vel = Mathf.Sqrt(2 * energy / mass);
         projectileController.Launch(vel);
