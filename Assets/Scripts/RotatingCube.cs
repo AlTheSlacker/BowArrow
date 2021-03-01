@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingCube : MonoBehaviour
+namespace BowArrow
 {
 
-    [SerializeField] private float rotationRate = 20;
-
-    void Update()
+    public class RotatingCube : MonoBehaviour
     {
-        transform.Rotate(new Vector3(0, rotationRate, 0) * Time.deltaTime);
-    } 
 
+        [SerializeField] private float rotationRate = 20;
+
+        void Update()
+        {
+            transform.Rotate(new Vector3(0, rotationRate, 0) * Time.deltaTime);
+        }
+
+    }
 }
